@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#00b7e6"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00b7e6"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img_back"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rightarrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:text="Supportus" />
+    </LinearLayout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.fundsupport.MainActivity"
+    android:id="@+id/supportpage">
+
+    <TextView
+        android:id="@+id/textTamil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="Tamil  "
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/textEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textTamil"
+        android:background="#ea5324"
+        android:padding="5dp"
+        android:text="English"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/webView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="2dp"
+        android:background="#ea5324"
+        android:text="I am Support"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTamil"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:text="You give money each of money will be used  One student for education / medicine used to who needs. Please give the hand will be change Peaceful  City of Nam Madurai."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/textSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textContent"
+        android:background="#efefef"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Select"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textYourSupport"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textSelect"
+        android:layout_alignBottom="@+id/textSelect"
+        android:layout_alignLeft="@+id/textContent"
+        android:layout_marginLeft="35dp"
+        android:padding="10dp"
+        android:text="Your Support"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+
+    <!--  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/textYourSupport"
+          android:padding="5dp" >
+
+
+          <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/gridview"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:columnWidth="90dp"
+              android:numColumns="auto_fit"
+              android:verticalSpacing="10dp"
+              android:horizontalSpacing="10dp"
+              android:stretchMode="columnWidth"
+              android:gravity="center"/>
+
+      </LinearLayout>-->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/fundbtn1"
+        android:layout_below="@+id/textSelect"
+        android:layout_alignLeft="@+id/textYourSupport"
+        android:layout_alignStart="@+id/textYourSupport"
+        android:layout_marginTop="24dp" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/bookbtn1"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_toLeftOf="@+id/textTamil"
+        android:layout_toStartOf="@+id/textTamil" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/clothsbtn1"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignStart="@+id/imageView1"
+        android:layout_marginTop="22dp" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/anyquerybtn1"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:src="@drawable/bloodbtn1"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6" />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/materailbtn1"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/textYourSupport"
+        android:layout_toEndOf="@+id/textYourSupport" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="122dp"></LinearLayout>
+</RelativeLayout>
+
+</LinearLayout>

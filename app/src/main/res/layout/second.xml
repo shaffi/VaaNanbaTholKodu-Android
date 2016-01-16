@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:background="@drawable/login"
+
+
+    android:logo = "@drawable/logo"
+
+    tools:context=".MainActivity"
+    android:id="@+id/second">
+
+    <Button
+
+        android:id="@+id/button2"
+
+        android:layout_width="197dp"
+
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentRight="true"
+
+        android:background="#E95224"
+
+        android:textAlignment="center"
+
+        android:text="Support Us"/>
+
+
+
+    <Button
+
+        android:id="@+id/button1"
+
+        android:layout_width="180dp"
+
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_alignParentLeft="true"
+
+        android:background="#2DACE2"
+
+        android:text="Joinus"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
+</RelativeLayout>

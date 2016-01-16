@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#FFFFFF"
+    tools:context="com.example.contactus.MainActivity" >
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textName"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:hint="  Enter Your Address"
+                android:textSize="10dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editContactNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textContact"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:inputType="phone"
+                android:hint="  Enter Your Conatct Number"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textContact"
+                android:layout_below="@+id/editContactNumber"
+                android:layout_marginTop="14dp"
+                android:textColor="#000000"
+                android:text="Email ID"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/editEmailAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textEmail"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="  Enter Your Email Id"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/textComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textEmail"
+                android:textColor="#000000"
+                android:layout_below="@+id/editEmailAddress"
+                android:layout_marginTop="10dp"
+                android:text="Comment/Feedback"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/textContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textName"
+                android:layout_below="@+id/editName"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:text="Contact Number"
+                android:textSize="12dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="18dp"
+                android:text="Name"
+                android:textColor="#000000"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/editComment_Feedback"
+                android:textColor="#000000"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/textComment"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:padding="10dp"
+                android:gravity="top|left"
+                android:textColorHint="#000000"
+                android:hint="Enter Your Comment/Feedback"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/editComment_Feedback"
+                android:layout_marginTop="10dp"
+                android:background="#00b7e6"
+                android:text="Submit"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/button1"
+                android:layout_marginTop="10dp"
+                android:background="#ea5324"
+                android:paddingLeft="80dp"
+                android:text="+91 96004 99994"
+                android:paddingRight="20dip"
+                android:drawableLeft="@drawable/iconcall"
+
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

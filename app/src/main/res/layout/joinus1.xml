@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#00b7e6"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00b7e6"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img_back"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rightarrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:text="Joinus" />
+    </LinearLayout>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"  >
+
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:text="@string/name"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/step_a_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/txt_number"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="20"
+            android:inputType="text"
+            android:layout_weight="0.01" />
+
+        <TextView
+            android:id="@+id/txt_number"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/number" />
+
+        <EditText
+            android:id="@+id/step_a_mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/emergencycontact" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/step_a_mergencyContact"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/DateofBirth"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:text="Date Of Birth" />
+
+        <DatePicker
+            android:id="@+id/datePicker1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.04" />
+
+
+        <RelativeLayout
+            android:layout_width="308dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/upload">
+
+            <ImageView
+                android:id="@+id/imageView_frommobile"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="26dp"
+                android:src="@drawable/frommobile"
+                android:layout_alignTop="@+id/imageView_takephoto" />
+
+            <ImageView
+                android:id="@+id/imageView_takephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:src="@drawable/takephoto"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/imageView_frommobile"
+                android:layout_toStartOf="@+id/imageView_frommobile"
+                android:layout_marginTop="38dp" />
+
+            <TextView
+                android:id="@+id/Uploadphoto"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Upload Your Photo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/step_a_next"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="50dp"
+            android:background="#FF0099CC"
+            android:text="Next"
+            android:textColor="@android:color/white" />
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+

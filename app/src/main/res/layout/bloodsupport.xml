@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#00b7e6"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00b7e6"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img_back"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rightarrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:text="BloodSupport" />
+    </LinearLayout>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bloodsupportnew.MainActivity"
+    android:background="#FFFFFF">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:fillViewport="false"
+
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="343dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textName"
+                android:background="@drawable/edit_text_style"
+                android:hint=" Enter Your Address"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:textSize="15dp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textBlood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Name"
+                android:text="Blood Group"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <EditText
+                android:id="@+id/BloodGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textBlood"
+                android:background="@drawable/edit_text_style"
+                android:hint=" Enter Your Blood Group"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/textContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BloodGroup"
+                android:text="Contact Number"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <EditText
+                android:id="@+id/ContactNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textContact"
+                android:background="@drawable/edit_text_style"
+                android:hint=" Enter Your Contact Number"
+                android:inputType="text"
+                android:textSize="15dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/textAlternate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ContactNumber"
+                android:text="Alternate Number"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <EditText
+                android:id="@+id/AlternateNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textAlternate"
+                android:background="@drawable/edit_text_style"
+                android:hint=" Enter Your Alternate Contact Number"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AlternateNumber"
+                android:text="Address"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                />
+
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/textAddress"
+                android:layout_below="@+id/textAddress"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint=" Enter Your Address"
+                android:inputType="text"
+                android:textSize="15dp"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:id="@+id/Address1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/textAddress"
+                android:layout_below="@+id/Address"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="15dp"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/Address2"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/Address1"
+                android:layout_below="@+id/Address1"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:inputType="text"
+                android:layout_margin="5dp"
+                android:textSize="15dp"
+                android:layout_marginBottom="50dp"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:id="@+id/buttonSubmit"
+                android:text="Submit"
+                android:layout_below="@+id/Address2"
+                android:background="#2DACE2"
+                android:layout_marginBottom="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
+    </LinearLayout>

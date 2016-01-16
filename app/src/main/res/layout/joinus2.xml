@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#00b7e6"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<LinearLayout
+    android:layout_width="391dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#00b7e6"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/img_back"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rightarrow" />
+ <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.5"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:text="Joinus" />
+    </LinearLayout>
+
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"  >
+
+        <TextView
+            android:id="@+id/AboutMe"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/txt_about"
+
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edxt_work"
+            android:layout_width="358dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="Working in HP for Sr.UXD."
+            android:paddingBottom="15dp"
+            android:textSize="13sp"
+            android:layout_marginBottom="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01" >
+
+            <TextView
+                android:id="@+id/emailid"
+                android:layout_width="55dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/txt_email"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edxt_enteremailid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="Enter Your Email Id"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="15dp"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_id"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edxt_enteridproof"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="Ex. Driving Licence No, Voter ID No"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:layout_marginBottom="10dp">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/bldgroup"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_blood"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/edxt_enterbloodgroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:hint="Enter Your Blood Group"
+            android:textSize="13sp"
+            android:textStyle="normal" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/sn"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_social"
+            android:textSize="15sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="176dp" >
+
+            <EditText
+                android:id="@+id/edxt_FacebookLogin"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="           Facebook Login"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edxt_google"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="           Google Plus"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edxt_twitterLogin"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="           TwitterLogin"
+
+                android:layout_toRightOf="@+id/imageView2"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/edxt_twitterLogin"
+                android:src="@drawable/twitter"
+                android:layout_alignBottom="@+id/edxt_twitterLogin"
+                android:layout_alignRight="@+id/imageView1"
+                android:layout_alignEnd="@+id/imageView1" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/fb1"
+                android:layout_gravity="left"
+
+                android:layout_alignBottom="@+id/edxt_FacebookLogin"
+                android:layout_alignLeft="@+id/imageView3"
+                android:layout_alignStart="@+id/imageView3"
+                android:layout_alignTop="@+id/edxt_FacebookLogin" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/edxt_google"
+                android:src="@drawable/google"
+                android:layout_marginLeft="1dp"
+                android:layout_alignBottom="@+id/edxt_google" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/step_b_button_next"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.04"
+            android:background="#FF33B5E5"
+            android:gravity="center"
+            android:text="@string/btn_next"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="app_name">MaterialNavigationDrawer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_emcont">Emergency (Police)</string>
+    <string name="txt_numberpolice">100</string>
+    <string name="txt_ambul">Ambulance</string>
+    <string name="txt_numberamulance">101</string>
+    <string name="txt_firesevice">Fire Service</string>
+    <string name="txt_tallukalam">Tallkulam</string>
+    <string name="txt_numberthallukalm">0452-2531620</string>
+    <string name="txt_numberanupandai">0452-2670999</string>
+    <string name="txt_anupandi">Anupandi</string>
+    <string name="txt_month">Feb 8 2015</string>
+    <string name="txt_place">Place : </string>
+    <string name="txt_place1">Theppakulam</string>
+    <string name="txt1_name">   MD Manie</string>
+    <string name="txt_number">+91 90080 63793</string>
+    <string name="txt_altnumber">Alt: +91 12345 67890</string>
+    <string name="txt_bg">B Positive</string>
+    <string name="txt_position">DL: VNTK01</string>
+    <string name="txt_work">About Me : Working in HP for Sr.UXD.</string>
+    <string name="text_email">Email : email2manie@gmail.com</string>
+    <string name="txt1_fb">Facebook : MD Manie</string><string name="txt_twiier">Twitter : @mndmani</string><string name="txt_google">Google Plus : mndmani</string><string name="txt_from">I Know VNTK From : Kali</string>
+    <string name="txt_nub">+91 96004 99994</string>
+    <string name="txt_address">Address:</string>
+    <string name="Joinus4_name">Joinus</string>
+
+
+
+
+
+        <string name="txt_fund">Fund</string>
+        <string name="txt_support">Support</string>
+        <string name="txt_book">Book</string>
+        <string name="txt_bkSupport">Support</string>
+        <string name="txt_material">Material</string>
+        <string name="txt_matSupport">Support</string>
+        <string name="txt_cloths">Cloths</string>
+        <string name="txt_clthsupport">Support</string>
+        <string name="txt_Tamil">Tamil</string>
+        <string name="txt_English">English</string>
+        <string name="txt_Select">Select</string>
+        <string name="txt_CashOnSupport">Cash On Support</string>
+        <string name="txt_YourSupport">Your Support</string>
+        <string name="txt_content">You give money each of money will be used  One student for education / medicine used to who needs. Please give the hand will be change Peaceful  City of Nam Madurai.</string>
+
+
+        <string-array name="Hours">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+            <item>6</item>
+            <item>7</item>
+            <item>8</item>
+            <item>9</item>
+            <item>10</item>
+            <item>11</item>
+            <item>12</item>
+        </string-array>
+        <string-array name="Min">
+            <item>5</item>
+            <item>10</item>
+            <item>15</item>
+            <item>20</item>
+            <item>25</item>
+            <item>30</item>
+            <item>35</item>
+            <item>40</item>
+            <item>45</item>
+            <item>50</item>
+            <item>55</item>
+            <item>60</item>
+        </string-array>
+        <string-array name="Hours1">
+            <item>1</item>
+            <item>2</item>
+            <item>3</item>
+            <item>4</item>
+            <item>5</item>
+            <item>6</item>
+            <item>7</item>
+            <item>8</item>
+            <item>9</item>
+            <item>10</item>
+            <item>11</item>
+            <item>12</item>
+        </string-array>
+        <string-array name="Min1">
+            <item>5</item>
+            <item>10</item>
+            <item>15</item>
+            <item>20</item>
+            <item>25</item>
+            <item>30</item>
+            <item>35</item>
+            <item>40</item>
+            <item>45</item>
+            <item>50</item>
+            <item>55</item>
+            <item>60</item>
+        </string-array>
+        <string-array name="Sec">
+            <item>AM</item>
+            <item>PM</item>
+
+        </string-array>
+
+
+
+
+
+    <string name="commend">You give money each of money will be used One
+                          student for education / medicine used to who
+                                needs. Please give the hand will be change
+                                Peaceful City of Nam Madurai.</string>
+
+        <string name="name">Name</string>
+        <string name="number">Number</string>
+        <string name="emergencycontact">EmergencyContact</string>
+
+        <string name="Card"> Depit Card/Credit Card</string>
+        <string name="txt_name">Name</string>
+        <string name="txt_email">Email ID</string>
+        <string name="txt_about">About Me</string>
+        <string name="txt_id">ID Proof</string>
+        <string name="txt_blood">Blood Group</string>
+        <string name="txt_social">Social Network</string>
+        <string name="txt_other">Others</string>
+        <string name="txt_frmsn">From Social Network</string>
+        <string name="txt_frmfd">From My Friend</string>
+        <string name="txt_msg">How to You Know About Vaa Nanba Thol Kodu</string>
+        <string name="txt_np">NewsPapers</string>
+        <string name="txt_adv">Advertistment</string>
+        <string name="txt_frme">From Events</string>
+        <string name="txt_up">Update Profile</string>
+        <string name="txt_prsntadd">Present Address</string>
+        <string name="txt_entadd">Enter the Address</string>
+        <string name="txt_fb">Facebook</string>
+        <string name="btn_next">Next</string>
+
+
+
+
+
+
+
+</resources>

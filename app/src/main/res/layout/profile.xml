@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.viewprofile.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_below="@+id/imageViewprofile" >
+
+        <ImageView
+            android:id="@+id/imageViewCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/iconphone" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/id_name"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@drawable/textviewstyle"
+        android:textSize="20sp"
+        android:ems="10"
+        android:textColor="#000000"
+        android:text="@string/txt1_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/id_number"
+        android:layout_alignStart="@+id/id_number" />
+
+    <TextView
+        android:id="@+id/id_number"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/id_name"
+        android:ems="10"
+        android:text="@string/txt_number"
+        android:textSize="15sp"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:id="@+id/id_altnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id_number"
+        android:layout_below="@+id/id_number"
+        android:ems="10"
+        android:textColor="#000000"
+        android:text="@string/txt_altnumber"
+        android:textSize="15sp"
+        android:layout_marginTop="2dp">
+
+        <requestFocus />
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageViewprofile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profileimg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp" />
+
+    <TextView
+        android:id="@+id/id_bloodgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id_altnumber"
+        android:layout_below="@+id/id_altnumber"
+        android:ems="10"
+        android:text="@string/txt_bg"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFF4444" />
+
+    <TextView
+        android:id="@+id/id_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#000000"
+        android:text="@string/txt_position"
+        android:textSize="20sp"
+        android:layout_below="@+id/id_bloodgroup"
+        android:layout_alignLeft="@+id/id_bloodgroup"
+        android:layout_alignStart="@+id/id_bloodgroup" />
+
+    <TextView
+        android:id="@+id/id_email"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textColor="#000000"
+        android:padding="12dip"
+        android:text="@string/text_email"
+        android:layout_above="@+id/id_fb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/id_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/textstyle"
+        android:ems="10"
+        android:padding="10dip"
+        android:textColor="#000000"
+        android:text="@string/txt1_fb"
+        android:layout_above="@+id/id_twitter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/id_google"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/textstyle"
+        android:ems="10"
+        android:padding="10dip"
+        android:textColor="#000000"
+        android:text="@string/txt_google"
+        android:layout_above="@+id/id_from"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/id_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/textstyle"
+        android:ems="10"
+        android:padding="10dip"
+        android:textColor="#000000"
+        android:text="@string/txt_twiier"
+        android:layout_above="@+id/id_google"
+        android:layout_alignRight="@+id/id_fromnumber"
+        android:layout_alignEnd="@+id/id_fromnumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/id_from"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:padding="5dip"
+        android:textColor="#000000"
+        android:text="@string/txt_from"
+        android:layout_above="@+id/id_fromnumber"
+        android:layout_alignRight="@+id/id_bloodgroup"
+        android:layout_alignEnd="@+id/id_bloodgroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/id_fromnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:ems="10"
+        android:padding="2dip"
+        android:textColor="#000000"
+        android:text="@string/txt_nub"
+        android:layout_above="@+id/id_address"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/id_address"
+        android:textColor="#000000"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:background="@drawable/textstyle"
+        android:ems="10"
+        android:padding="10dip"
+        android:text="@string/txt_address"
+        android:layout_above="@+id/webView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/id_abut"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/textstyle"
+        android:ems="10"
+        android:textColor="#000000"
+        android:padding="10dip"
+        android:text="@string/txt_work"
+        android:layout_above="@+id/id_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageViewChat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/basic"
+        android:layout_below="@+id/imageViewprofile"
+        android:layout_toRightOf="@+id/imageViewprofile"
+        android:layout_toEndOf="@+id/imageViewprofile" />
+
+</RelativeLayout>

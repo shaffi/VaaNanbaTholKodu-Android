@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#00b7e6"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00b7e6"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img_back"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rightarrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:text="Joinus" />
+    </LinearLayout>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="458dp"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/txt_id"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#FFFFFF">
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/txt_msg"
+        android:textSize="13sp"
+        android:textStyle="normal" >
+    </TextView>
+
+    <RadioButton
+        android:id="@+id/step_c_b_FromMyfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/txt_frmfd"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <RadioButton
+        android:id="@+id/step_c_b_FromSocialNetwork"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/txt_frmsn"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp" >
+
+        <RadioButton
+            android:id="@+id/step_c_b_Others"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_other"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <RadioButton
+            android:id="@+id/step_c_b_FromNewsPaper"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/step_c_b_FromEvents"
+            android:layout_below="@+id/step_c_b_Others"
+            android:text="@string/txt_np"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <RadioButton
+            android:id="@+id/step_c_b_FromEvents"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/step_c_b_Others"
+            android:layout_below="@+id/step_c_b_FromAdvertistment"
+            android:text="@string/txt_frme"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+        <RadioButton
+            android:id="@+id/step_c_b_FromAdvertistment"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/step_c_b_FromNewsPaper"
+            android:layout_below="@+id/step_c_b_FromNewsPaper"
+            android:text="@string/txt_adv"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/txt_id">
+
+        <TextView
+            android:id="@+id/PresentAddress"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Address"
+            android:layout_alignLeft="@+id/Address"
+            android:ems="10"
+            android:text="@string/txt_prsntadd"
+            android:textSize="13sp"
+            android:textStyle="normal|bold"
+            android:typeface="normal" />
+
+        <EditText
+            android:id="@+id/edxt_address_stepc"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/PresentAddress"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:height="27dp"
+            android:hint="@string/txt_entadd"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/edxt_address1_stepc"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edxt_address_stepc"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:text=" "
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/edxt_address2_stepc"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/edxt_address1_stepc"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:text=" " />
+
+        <EditText
+            android:id="@+id/edxt_address3_stepc"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/edxt_address2_stepc"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_style"
+            android:ems="10"
+            android:text=" " >
+
+            <requestFocus />
+        </EditText>
+
+
+    </RelativeLayout>
+
+        <Button
+            android:id="@+id/step_c_b_button_Nextpage"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+
+            android:background="#FF0099CC"
+            android:paddingTop="10dp"
+            android:text="@string/txt_up"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/edxt_address3_stepc"
+            android:layout_alignStart="@+id/edxt_address3_stepc"
+            android:layout_alignRight="@+id/edxt_address3_stepc"
+            android:layout_alignEnd="@+id/edxt_address3_stepc" />
+    </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+
+

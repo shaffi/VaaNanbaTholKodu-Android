@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/layout1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txt1_emergncy"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_emergencycontact"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/id_ambul"
+            android:layout_alignTop="@+id/image_emergencycontact"
+
+            android:ems="10"
+            android:text="@string/txt_emcont"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </TextView>
+
+        <ImageView
+            android:id="@+id/image_emergencycontact"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="16dp"
+            android:drawableRight="@drawable/iconphone"
+            android:paddingLeft="10dp"
+            android:src="@drawable/iconphone" />
+
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_emergencycontact"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="@string/txt_numberpolice" />
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:color="#FFFFFF"
+            android:layout_below="@+id/txt1_emergncy" />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:color="#FFFFFF"
+            android:layout_alignTop="@+id/id_fire"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/image_ambulance"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/right_text1"
+            android:layout_alignRight="@+id/image_emergencycontact"
+            android:src="@drawable/iconphone" />
+
+        <TextView
+            android:id="@+id/id_ambul"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/right_text1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/right_text1"
+
+            android:ems="10"
+            android:text="@string/txt_ambul"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/id_fire"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_firesevice"
+            android:paddingBottom="5dp"
+            android:textSize="15sp"
+            android:layout_below="@+id/image_ambulance"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/id_tallukalam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_tallukalm"
+            android:layout_alignRight="@+id/id_ambul"
+            android:layout_below="@+id/id_fire"
+            android:textColor="#000000"
+            android:text="@string/txt_tallukalam"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/right_thallukalam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/image_tallukalm"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/id_tallukalam"
+            android:paddingBottom="5dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="@string/txt_numberthallukalm" />
+
+        <ImageView
+            android:id="@+id/image_tallukalm"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/id_fire"
+            android:layout_marginRight="27dp"
+            android:layout_toLeftOf="@+id/image_emergencycontact"
+            android:src="@drawable/iconphone" />
+
+        <TextView
+            android:id="@+id/right_anupandai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:paddingBottom="5dp"
+            android:text="@string/txt_numberanupandai"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/image_anupandi"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/image_anupandi"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/iconphone"
+            android:layout_below="@+id/image_tallukalm"
+            android:layout_alignLeft="@+id/image_tallukalm"
+            android:layout_alignStart="@+id/image_tallukalm" />
+
+
+        <TextView
+            android:id="@+id/right_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/id_ambul"
+            android:layout_below="@+id/txt1_emergncy"
+            android:layout_marginTop="14dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:text="@string/txt_numberamulance" />
+
+        <TextView
+            android:id="@+id/id_anupandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_anupandi"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_alignTop="@+id/right_anupandai"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+android:color="#FFFFFF"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

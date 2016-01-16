@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#00b7e6"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00b7e6"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/img_back"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rightarrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.5"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:text="Joinus" />
+    </LinearLayout>
+
+   <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="#FFFFFF">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:id="@+id/txt_id"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:text="@string/txt_msg"
+        android:textSize="13sp" >
+    </TextView>
+
+    <RadioButton
+        android:id="@+id/stepc_a_radio_FromMyfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/txt_frmfd"
+        android:textSize="13sp" />
+
+    <RadioButton
+        android:id="@+id/stepc_a_radio_FromSocialNetwork"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="onRadioButtonClicked"
+        android:text="@string/txt_frmsn"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp" >
+
+        <RadioButton
+            android:id="@+id/stepc_a_radio_fromFacebook"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="54dp"
+            android:text="@string/txt_fb"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/stepc_a_radio_fromtwitter"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="26dp"
+            android:text="Twitter"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/stepc_a_radio_fromgoogleplus"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="54dp"
+            android:text="GooglePlus"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/stepc_a_radio_others"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stepc_a_radio_fromgoogleplus"
+            android:onClick="onRadioButtonClicked"
+            android:text="Others"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/PresentAddress"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Present Address "
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/stepc_a_address1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text_style"
+        android:height="27dp"
+        android:hint="Enter the Address"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/stepc_a_address2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:height="27dp"
+        android:text=" "
+        android:textSize="13sp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/stepc_a_address3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text_style"
+        android:ems="10"
+        android:height="27dp"
+        android:text=" " >
+    </EditText>
+
+    <EditText
+        android:id="@+id/stepc_a_address4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text_style"
+        android:height="27dp"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/stepc_a_button_Nextpage"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="#FF33B5E5"
+        android:text="Update Profile"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@android:color/white" />
+       </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
