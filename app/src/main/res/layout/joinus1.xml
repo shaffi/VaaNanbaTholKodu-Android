@@ -1,59 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:layout_width="wrap_content"
+    android:id="@+id/ll_user_info_list"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00b7e6"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
-    android:paddingBottom="5dp"
-    android:paddingTop="5dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    >
-    <LinearLayout
-        android:layout_width="391dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#00b7e6"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:id="@+id/img_back"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/rightarrow" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="0.5"
-            android:textSize="30dp"
-            android:textColor="#FFFFFF"
-            android:text="Joinus" />
-    </LinearLayout>
-
+    <include
+        android:id="@+id/custom_action_bar"
+        layout="@layout/actionbar_joinus" />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#FFFFFF">
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical"
-        android:paddingBottom="5dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:paddingTop="10dp"  >
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
 
 
         <TextView
             android:id="@+id/label"
-            android:layout_width="89dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
             android:ems="10"
             android:text="@string/name"
             android:textStyle="normal" />
@@ -88,7 +70,7 @@
 
         <TextView
             android:id="@+id/label2"
-            android:layout_width="141dp"
+            android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="10dp"
@@ -139,9 +121,10 @@
             <ImageView
                 android:id="@+id/imageView_takephoto"
                 android:layout_width="wrap_content"
-                android:layout_height="160dp"
+                android:layout_height="162dp"
                 android:src="@drawable/takephoto"
                 android:layout_alignParentTop="true"
+                android:paddingLeft="10dp"
                 android:layout_toLeftOf="@+id/imageView_frommobile"
                 android:layout_toStartOf="@+id/imageView_frommobile"
                 android:layout_marginTop="38dp" />
@@ -159,7 +142,7 @@
         <Button
             android:id="@+id/step_a_next"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:layout_marginBottom="18dp"
             android:layout_marginTop="50dp"
             android:background="#FF0099CC"

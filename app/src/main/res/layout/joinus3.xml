@@ -1,227 +1,301 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:layout_width="wrap_content"
+    android:id="@+id/ll_user_info_list"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00b7e6"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
-    android:paddingBottom="5dp"
-    android:paddingTop="5dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    >
-    <LinearLayout
-        android:layout_width="391dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#00b7e6"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:id="@+id/img_back"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/rightarrow" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
+    <include
+        android:id="@+id/custom_action_bar"
+        layout="@layout/actionbar_joinus" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="0.5"
-            android:textSize="30dp"
-            android:textColor="#FFFFFF"
-            android:text="Joinus" />
-    </LinearLayout>
-
-    <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:id="@+id/sr_id">
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:id="@+id/txt_id"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingTop="5dp"
-    android:paddingBottom="5dp"
-    android:background="#FFFFFF">
-
-    <TextView
-        android:id="@+id/label"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:text="How to You Know About Vaa Nanba Thol Kodu"
-        android:textSize="13sp"
-        android:textStyle="normal">
-    </TextView>
-
-
-    <RadioButton
-        android:id="@+id/radio_FromMyfriend"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onRadioButtonClicked"
-        android:text="From My Friend"
-
-        android:textSize="13sp"
-        android:textStyle="normal" />
-
-    <TextView
-        android:id="@+id/friendname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="5dp"
-        android:text="Your Friend Name"
-        android:textSize="13sp"
-        android:textStyle="normal"/>
-
-    <EditText
-        android:id="@+id/step_c_entername"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/edit_text_style"
-        android:layout_marginBottom="5dp"
-        android:ems="10"
-        android:hint="Enter your Friend Name"
-        android:textSize="13sp"
-        android:textStyle="normal"/>
-
-    <TextView
-        android:id="@+id/etxt_ContactNo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="5dp"
-        android:text="Your Friend Contact No "
-        android:textSize="13sp"
-        android:textStyle="normal"/>
-
-    <EditText
-        android:id="@+id/step_c_frientnumber"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/edit_text_style"
-        android:layout_marginBottom="5dp"
-        android:ems="10"
-        android:inputType="phone"
-        android:hint="Enter Your Friend Contact"
-        android:textSize="13sp"
-        android:textStyle="normal">
-
-        <requestFocus />
-    </EditText>
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="How to You Know About Vaa Nanba Thol Kodu"
+                android:textSize="13sp"
+                android:textStyle="normal">
+            </TextView>
 
     <RadioGroup
-        android:id="@+id/step_c_radiogroup"
         android:layout_width="match_parent"
-        android:layout_height="59dp" >
+        android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio_FromMyfriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="From My Friend"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
 
-        <RadioButton
-            android:id="@+id/radio_FromSocialNetwork"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:layout_marginTop="7dp"
-            android:text="From Social Network"
-            android:textSize="13sp"
-            android:textStyle="normal"/>
+                <LinearLayout
+                    android:id="@+id/layout_fromfrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/friendname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Your Friend Name"
+                        android:textSize="13sp"
+                        android:textStyle="normal"/>
 
-        <RadioButton
-            android:id="@+id/radio_Others"
-            android:layout_width="200dp"
+                    <EditText
+                        android:id="@+id/edt_friendname"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edit_text_style"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:hint="Enter your Friend Name"
+                        android:textSize="13sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/etxt_ContactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Your Friend Contact No "
+                        android:textSize="13sp"
+                        android:textStyle="normal"/>
+
+                    <EditText
+                        android:id="@+id/edt_frientnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edit_text_style"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:hint="Enter Your Friend Contact"
+                        android:textSize="13sp"
+                        android:textStyle="normal">
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+            <RadioButton
+                    android:id="@+id/radio_FromSocialNetwork"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:layout_marginTop="2dp"
+                    android:text="From Social Network"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+        <LinearLayout
+            android:id="@+id/layout_fromsocialnetwork"
+            android:layout_width="317dp"
             android:layout_height="wrap_content"
-            android:onClick="onRadioButtonClicked"
-            android:layout_marginTop="2dp"
-            android:text="Others"
-            android:textSize="13sp"
-            android:textStyle="normal"/>
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:visibility="gone">
+            <RadioGroup
+                android:layout_width="243dp"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_fromFacebook"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/txt_fb"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_fromTwitter"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginTop="5dp"
+                android:text="Twitter"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_fromGoogleplus"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:text="GooglePlus"
+                android:textSize="13sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+            <RadioButton
+                android:id="@+id/radio_Others"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginTop="1dp"
+                android:text="Others"
+                android:textSize="13sp"
+                android:textStyle="normal"/>
+
+        <LinearLayout
+            android:id="@+id/layout_fromother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30dp"
+            android:visibility="gone">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_fromNewsPaper"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/step_c_b_FromEvents"
+                    android:layout_below="@+id/step_c_b_Others"
+                    android:text="@string/txt_np"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_fromEvents"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/step_c_b_Others"
+                    android:layout_below="@+id/step_c_b_FromAdvertistment"
+                    android:text="@string/txt_frme"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_fromAdvertistment"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/step_c_b_FromNewsPaper"
+                    android:layout_below="@+id/step_c_b_FromNewsPaper"
+                    android:text="@string/txt_adv"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:layout_marginTop="5dp"/>
+
+
+            </RadioGroup>
+            </LinearLayout>
+
     </RadioGroup>
 
 
-    <TextView
-        android:id="@+id/step_c_PresentAddress"
-        android:layout_width="202dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="14dp"
-        android:ems="10"
-        android:text="Present Address "
-        android:textSize="13sp"
-        android:textStyle="normal" />
+            <TextView
+                android:id="@+id/step_c_PresentAddress"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:text="Present Address "
+                android:textSize="13sp"
+                android:textStyle="normal" />
 
-    <EditText
-        android:id="@+id/step_c_etxt_address1"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="5dp"
-        android:layout_below="@+id/step_c_PresentAddress"
-        android:background="@drawable/edit_text_style"
-        android:ems="10"
-        android:hint="Enter the Address"
-        android:textSize="13sp"
-        android:textStyle="normal" />
+            <EditText
+                android:id="@+id/step_c_etxt_address1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/step_c_PresentAddress"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:hint="Enter the Address"
+                android:textSize="13sp"
+                android:textStyle="normal" />
 
-    <EditText
-        android:id="@+id/step_c_etxt_address3"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_above="@+id/step_c_etxt_address4"
-        android:layout_alignParentLeft="true"
-        android:background="@drawable/edit_text_style"
-        android:ems="10"
-        android:text=" "
-        android:textSize="13dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:textStyle="normal" />
+            <EditText
+                android:id="@+id/step_c_etxt_address3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_above="@+id/step_c_etxt_address4"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:text=" "
+                android:textSize="13dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="normal" />
 
-    <EditText
-        android:id="@+id/step_c_etxt_address4"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/edit_text_style"
-        android:ems="10"
-        android:text=" "
-        android:textStyle="normal" />
+            <EditText
+                android:id="@+id/step_c_etxt_address4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:text=" "
+                android:textStyle="normal" />
 
-    <EditText
-        android:id="@+id/step_c_etxt_address2"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_above="@+id/step_c_etxt_address3"
-        android:layout_alignParentLeft="true"
-        android:background="@drawable/edit_text_style"
-        android:ems="10"
-        android:text=" "
-        android:layout_marginBottom="10dp"
-        android:textStyle="normal" />
+            <EditText
+                android:id="@+id/step_c_etxt_address2"
+                 android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_above="@+id/step_c_etxt_address3"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/edit_text_style"
+                android:ems="10"
+                android:text=" "
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal" />
 
 
 
-    <Button
-        android:id="@+id/stepc_updateprofile"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="#FF33B5E5"
-        android:layout_marginBottom="110dp"
-        android:layout_marginTop="20dp"
 
-        android:text="Update Profile"
-        android:textColor="@android:color/white" />
+            <Button
+                android:id="@+id/stepc_updateprofile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="10dp"
+                android:background="#FF0099CC"
+                android:text="@string/btn_update"
+                android:textColor="@android:color/white" />
 
-</LinearLayout>
-</ScrollView>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

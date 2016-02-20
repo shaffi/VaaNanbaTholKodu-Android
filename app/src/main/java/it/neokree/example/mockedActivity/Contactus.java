@@ -24,28 +24,21 @@ public class Contactus extends Activity {
     public Button submitB,call2;
     private WebView webview;
     //private ActionBar action;
-    private EditText name,contactnum,emailid,comment;
+    private EditText name,mobile,email,comments;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.contactus);
         name=(EditText)findViewById(R.id.editName);
-        contactnum=(EditText)findViewById(R.id.editContactNumber);
-        emailid=(EditText)findViewById(R.id.editEmailAddress);
-        comment=(EditText)findViewById(R.id.editComment_Feedback);
+        mobile=(EditText)findViewById(R.id.editContactNumber);
+        email=(EditText)findViewById(R.id.editEmailAddress);
+        comments=(EditText)findViewById(R.id.editComment_Feedback);
         submitB=(Button)findViewById(R.id.button1);
        call2=(Button)findViewById(R.id.button2);
         webview=(WebView)findViewById(R.id.webView1);
 
-
-        /*Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:9894824829"));
-        startActivity(callIntent);*/
-
-
-
-    }
+  }
 
 
 }

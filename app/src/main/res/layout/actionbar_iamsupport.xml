@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="#00b7e6"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/img_iconhumburger"
+        android:layout_width="18dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/iconhumburger"
+
+        android:padding="15dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_joinus"
+        android:layout_marginTop="4dp"
+        android:text="Iam Support"
+        android:textSize="23sp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

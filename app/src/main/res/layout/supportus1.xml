@@ -1,40 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:background="#00b7e6"
-    android:orientation="vertical"
-    android:paddingBottom="5dp"
-    android:paddingTop="5dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    >
-    <LinearLayout
-        android:layout_width="391dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#00b7e6"
-        xmlns:android="http://schemas.android.com/apk/res/android">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:id="@+id/img_back"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/rightarrow" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="0.5"
-            android:textSize="30dp"
-            android:textColor="#FFFFFF"
-            android:text="Supportus" />
-    </LinearLayout>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_user_info_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/custom_action_bar"
+        layout="@layout/actionbar_support" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="#FFFFFF"
     android:weightSum="1">
@@ -72,14 +55,15 @@
     <TextView
         android:id="@+id/label"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:paddingTop="10dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:ems="10"
         android:paddingBottom="15dp"
         android:text="@string/commend"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.09" />
 
 
     <RelativeLayout
@@ -93,53 +77,75 @@
             android:background="#FF33B5E5"
             android:ems="10"
             android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
             android:text="Fund Support"
+            android:paddingLeft="40dip"
+            android:gravity="left|center_vertical"
             android:textColor="@android:color/white" />
 
-     <!--   <ImageButton
-            android:id="@+id/imageButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
+        <CheckBox
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="New CheckBox"
+            android:id="@+id/checkBox"
+            android:layout_centerVertical="true"
+            android:background="#FF33B5E5"
+            android:buttonTint="@color/white" />
 
-            android:src="@drawable/icontick1" />-->
+        <!--   <ImageButton
+               android:id="@+id/imageButton1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+
+               android:src="@drawable/icontick1" />-->
 
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/txt_material"
+    <Button
+        android:id="@+id/bt_material"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_gravity="left"
         android:padding="12dip"
         android:layout_marginBottom="2dp"
         android:background="#C0C0C0"
-        android:text="Material Support" />
+        android:text="Material Support"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="5dip" />
 
-    <TextView
-        android:id="@+id/txt_book"
+    <Button
+        android:id="@+id/bt_book"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Book Support"
+        android:layout_gravity="left|center_vertical"
         android:padding="12dip"
         android:background="#C0C0C0"
         android:paddingBottom="1dp"
-        android:layout_marginBottom="2dp"/>
-    <TextView
-        android:id="@+id/txt_cloths"
+        android:layout_marginBottom="2dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="5dip"/>
+    <Button
+        android:id="@+id/bt_cloths"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="12dip"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="left"
         android:text="Cloths Support"
         android:layout_marginBottom="2dp"
+        android:gravity="left|center_vertical"
         android:background="#C0C0C0"/>
-    <TextView
-        android:id="@+id/txt_food"
+    <Button
+        android:id="@+id/bt_food"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Food Support"
+        android:layout_gravity="left"
         android:padding="12dip"
+        android:gravity="left|center_vertical"
         android:background="#C0C0C0"
         android:layout_marginBottom="2dp"/>
     <Button
@@ -148,15 +154,17 @@
         android:layout_height="50dp"
         android:background="#FF4500"
         android:text="I am Support"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="10dp"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="30dp"
+        android:layout_weight="0.25" />
+
 
     <WebView
         android:id="@+id/webView1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"/>
+</LinearLayout>
+</LinearLayout>
 
-</LinearLayout>
-</LinearLayout>

@@ -3,7 +3,7 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 
-    <string name="app_name">MaterialNavigationDrawer</string>
+    <string name="app_name">VaaNanbaa Tholkodu</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="txt_emcont">Emergency (Police)</string>
@@ -25,11 +25,14 @@
     <string name="txt_position">DL: VNTK01</string>
     <string name="txt_work">About Me : Working in HP for Sr.UXD.</string>
     <string name="text_email">Email : email2manie@gmail.com</string>
-    <string name="txt1_fb">Facebook : MD Manie</string><string name="txt_twiier">Twitter : @mndmani</string><string name="txt_google">Google Plus : mndmani</string><string name="txt_from">I Know VNTK From : Kali</string>
+    <string name="txt1_fb">Facebook : MD Manie</string><string name="txt_twiier">Twitter : @mndmani</string><string name="txt_google">Google Plus : mndmani</string><string name="txt_from">I Know VNTK From:</string>
     <string name="txt_nub">+91 96004 99994</string>
     <string name="txt_address">Address:</string>
     <string name="Joinus4_name">Joinus</string>
-
+    <string name="text_fb">Facebook Login</string>
+    <string name="text_googlepluse">Google Plus</string>
+    <string name="text_twitter">TwitterLogin</string>
+    <string name="btn_update">Update Profile</string>
 
 
 

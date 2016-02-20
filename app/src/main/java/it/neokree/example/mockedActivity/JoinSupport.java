@@ -22,25 +22,11 @@ public class JoinSupport extends Activity implements View.OnClickListener{
     public Button joinus, supportus;
     private ActionBar action;
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-
-        setContentView(R.layout.second);
-
-       // getSupportActionBar().setDisplayShowHomeEnabled(true);
-
-       // getSupportActionBar().setIcon(R.drawable.logo);
-        //getSupportActionBar().setDisplayShowTitleEnabled(false);
-       // getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#00b7e6")));
+        setContentView(R.layout.screen2);
         joinus = (Button) findViewById(R.id.button1);
         supportus = (Button) findViewById(R.id.button2);
-       // joinus.setOnClickListener((View.OnClickListener) this);
-       // supportus.setOnClickListener((View.OnClickListener) this);
-       // btn_nxt.setOnClickListener((View.OnClickListener)this);
-
-
-
-    }
+        }
 
     @Override
     public void onClick(View view) {

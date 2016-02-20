@@ -1,36 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:background="#00b7e6"
-    android:orientation="vertical"
-    android:paddingBottom="5dp"
-    android:paddingTop="5dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    >
-    <LinearLayout
-        android:layout_width="391dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#00b7e6"
-        xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/custom_action_bar"
+        layout="@layout/actionbar_iamsupport" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:id="@+id/img_back"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/rightarrow" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="0.5"
-            android:textSize="30dp"
-            android:textColor="#FFFFFF"
-            android:text="Iam Support" />
-    </LinearLayout>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -62,8 +37,8 @@
                 android:textSize="10dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_alignRight="@+id/button1"
-                android:layout_alignEnd="@+id/button1">
+                android:layout_alignRight="@+id/btn_iamsupport"
+                android:layout_alignEnd="@+id/btn_iamsupport">
 
                 <requestFocus />
             </EditText>
@@ -138,6 +113,7 @@
                 android:layout_height="40dp"
                 android:layout_below="@+id/textView2"
                 android:ems="10"
+                android:inputType="number"
                 android:textSize="10dp"
                 android:background="@drawable/edit_text_style"
                 android:hint="  Enter your Contact Number"
@@ -226,7 +202,7 @@
                 />
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/btn_iamsupport"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:background="#2DACE2"
@@ -250,6 +226,16 @@
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
                 android:text="Available Time" />
+
+         <!--   <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView7"
+                android:layout_below="@+id/editText3"
+                android:layout_toRightOf="@+id/textView1"
+                android:layout_toEndOf="@+id/textView1" />-->
         </RelativeLayout>
 
     </ScrollView>
@@ -257,6 +243,7 @@
         android:id="@+id/webView1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:src="@drawable/webviewimage"
         android:layout_alignParentBottom="true"
         android:adjustViewBounds="true" />
 </RelativeLayout>

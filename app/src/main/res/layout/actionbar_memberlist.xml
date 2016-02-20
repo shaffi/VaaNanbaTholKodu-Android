@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="#00b7e6"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:weightSum="1"
+    android:id="@+id/linear_action">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="24dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/iconhumburger"
+        android:contentDescription="@string/app_name"
+        android:padding="15dp" />
+
+
+    <SearchView android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="30dp"
+        android:id="@+id/txt_member"
+        android:text="Members"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_weight="0.45"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:id="@+id/image_search"
+        android:layout_gravity="center"
+        android:background="@drawable/iconsearch"
+        android:layout_weight="0.1"
+        android:padding="5dp"
+        />
+
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:id="@+id/image_chat"
+        android:layout_gravity="center"
+        android:background="@drawable/chaticonwhite"
+        android:layout_weight="0.1"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"/>
+
+
+</LinearLayout>

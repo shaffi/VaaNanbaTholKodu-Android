@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear_gropprow" >
+    <!--<include
+        android:id="@+id/custom_action_bar"
+        layout="@layout/actionbar_memberlist">
+
+    </include>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_group">
+
+        <it.neokree.example.mockedActivity.RoundImage
+            android:id="@+id/imageView_round"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+           />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:id="@+id/image_uparrow"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/downimage"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/user_name" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

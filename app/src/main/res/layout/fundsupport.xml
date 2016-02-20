@@ -1,41 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:background="#00b7e6"
-    android:orientation="vertical"
-    android:paddingBottom="5dp"
-    android:paddingTop="5dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    >
-    <LinearLayout
-        android:layout_width="391dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="#00b7e6"
-        xmlns:android="http://schemas.android.com/apk/res/android">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:id="@+id/img_back"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/rightarrow" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="0.5"
-            android:textSize="30dp"
-            android:textColor="#FFFFFF"
-            android:text="FundSupport" />
-    </LinearLayout>
+
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <include
+        android:id="@+id/custom_action_bar"
+        layout="@layout/actionbar_fundsupport" />
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -97,7 +71,6 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#000000"
             android:textSize="13dp" />
-
         <TextView
             android:id="@+id/textNetBanking"
             android:layout_width="wrap_content"
@@ -196,7 +169,6 @@
             android:text="Debit Card / Credit Card"
             android:textColor="#FFFFFF"
             android:layout_below="@+id/textContent" />
-
         <TextView
             android:id="@+id/textOops"
             android:layout_width="wrap_content"
@@ -210,7 +182,7 @@
             android:layout_above="@+id/textUnderProcessing"
             android:layout_centerHorizontal="true" />
 
+
     </RelativeLayout>
 
 </LinearLayout>
-    </LinearLayout>

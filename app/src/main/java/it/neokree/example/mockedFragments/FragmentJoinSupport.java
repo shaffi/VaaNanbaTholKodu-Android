@@ -26,7 +26,7 @@ public class FragmentJoinSupport extends Fragment implements View.OnClickListene
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.second, container, false);
+        View v = inflater.inflate(R.layout.screen2, container, false);
 
        /* v.findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
 

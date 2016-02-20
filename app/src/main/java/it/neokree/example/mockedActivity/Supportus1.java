@@ -19,6 +19,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 
 import it.neokree.example.MainActivity;
 import it.neokree.example.R;
+import it.neokree.example.Screen2;
 import it.neokree.example.light.Accounts;
 
 
@@ -33,26 +34,40 @@ public class Supportus1 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.supportus1);
-  imgback=(ImageView)findViewById(R.id.img_back);
-        imgback.setOnClickListener(new View.OnClickListener(){
+ // imgback=(ImageView)findViewById(R.id.img_back);
+       // imgback.setOnClickListener(new View.OnClickListener(){
 
-            public void onClick(View v){
+           // public void onClick(View v){
 
-                Intent i;
+               // Intent i;
                 // i = new Intent(Joinus1.this, JoinSupport.class);
-                i = new Intent(Supportus1.this, Accounts.class);
-                startActivity(i);
+                //i = new Intent(Supportus1.this, Screen2.class);
+                //startActivity(i);
                 //Toast.makeText(Joinus1.this, "shshgshgshgsghs", Toast.LENGTH_LONG).show();
-            }
+           // }
 
 
-        });//actionBar.setIcon(R.drawable.iconhumburger);
+       // });//actionBar.setIcon(R.drawable.iconhumburger);
  addListenerOnButton();
 
         button = (Button) findViewById(R.id.button1);
         webview = (WebView) findViewById(R.id.webView1);
         tamil = (TextView) findViewById(R.id.textTamil);
         english = (TextView) findViewById(R.id.textEnglish);
+        english = (TextView) findViewById(R.id.textEnglish);
+        imgback=(ImageView)findViewById(R.id.img_iconhumburger);
+        imgback.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v){
+
+                Intent i;
+                i = new Intent(Supportus1.this,Accounts.class);
+                startActivity(i);
+
+            }
+
+
+        });
 
 
         tamil.setOnClickListener(new OnClickListener() {
