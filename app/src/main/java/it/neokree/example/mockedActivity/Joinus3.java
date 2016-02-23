@@ -34,27 +34,64 @@ import static android.view.View.VISIBLE;
 public class Joinus3 extends Activity implements View.OnClickListener {
     private ImageView imgback;
     private Context context;
+    private LinearLayout  linear,linearsocial,linearother;
+    private  EditText edt_frdname,edt_frdnumber,edt_address,edt_address2,edt_address3,edt_address4;
+    private RadioButton rb_fb,rb_twitter,rb_gogle,rb_event,rb_newspaper, rb_adver,rb_fmmfrend, rb_fmmysocial,rb_other ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.joinus3);
         context = this.getApplicationContext();
         //EditText know_friend= (EditText) findViewById(R.id.step_c_entername);
-        final RadioButton rb_fmmfrend = (RadioButton) findViewById(R.id.radio_FromMyfriend);
-        final RadioButton rb_fmmysocial = (RadioButton) findViewById(R.id.radio_FromSocialNetwork);
-        final RadioButton rb_other = (RadioButton) findViewById(R.id.radio_Others);
-        EditText edt_frdname = (EditText) findViewById(R.id.edt_friendname);
-        EditText edt_frdnumber = (EditText) findViewById(R.id.edt_frientnumber);
-        RadioButton rb_fb = (RadioButton) findViewById(R.id.rb_fromFacebook);
-        RadioButton rb_twitter = (RadioButton) findViewById(R.id.rb_fromTwitter);
-        RadioButton rb_gogle = (RadioButton) findViewById(R.id.rb_fromGoogleplus);
-        RadioButton rb_event = (RadioButton) findViewById(R.id.rb_fromEvents);
-        RadioButton rb_newspaper = (RadioButton) findViewById(R.id.rb_fromNewsPaper);
-        RadioButton rb_adver = (RadioButton) findViewById(R.id.rb_fromAdvertistment);
-        final LinearLayout linear =(LinearLayout)findViewById(R.id.layout_fromfrd);
-        final LinearLayout linearsocial = (LinearLayout)findViewById(R.id.layout_fromsocialnetwork);
-        final LinearLayout linearother = (LinearLayout)findViewById(R.id.layout_fromother);
+        rb_fmmfrend = (RadioButton) findViewById(R.id.radio_FromMyfriend);
+        rb_fmmysocial = (RadioButton) findViewById(R.id.radio_FromSocialNetwork);
+        rb_other = (RadioButton) findViewById(R.id.radio_Others);
+        edt_frdname = (EditText) findViewById(R.id.edt_friendname);
+        edt_address = (EditText) findViewById(R.id.step_c_etxt_address1);
+        edt_address2 = (EditText) findViewById(R.id.step_c_etxt_address2);
+        edt_address3 = (EditText) findViewById(R.id.step_c_etxt_address3);
+        edt_address4 = (EditText) findViewById(R.id.step_c_etxt_address4);
+        edt_frdnumber = (EditText) findViewById(R.id.edt_frientnumber);
+        rb_fb = (RadioButton) findViewById(R.id.rb_fromFacebook);
+        rb_twitter = (RadioButton) findViewById(R.id.rb_fromTwitter);
+        rb_gogle = (RadioButton) findViewById(R.id.rb_fromGoogleplus);
+        rb_event = (RadioButton) findViewById(R.id.rb_fromEvents);
+        rb_newspaper = (RadioButton) findViewById(R.id.rb_fromNewsPaper);
+        rb_adver = (RadioButton) findViewById(R.id.rb_fromAdvertistment);
+        linear =(LinearLayout)findViewById(R.id.layout_fromfrd);
+        linearsocial = (LinearLayout)findViewById(R.id.layout_fromsocialnetwork);
+        linearother = (LinearLayout)findViewById(R.id.layout_fromother);
         //final RelativeLayout relative_fromsocial = (RelativeLayout) findViewById(R.id.relative_radiobutton);
+        edt_frdname.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                edt_frdname.setHint("");
+            }
+        });
+        edt_frdnumber.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                edt_frdnumber.setHint("");
+            }
+        });
+        edt_address.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                edt_address.setHint("");
+            }
+        });
+        edt_address2.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                edt_address2.setHint("");
+            }
+        });
+        edt_address3.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                edt_address3.setHint("");
+            }
+        });
+        edt_address4.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                edt_address4.setHint("");
+            }
+        });
         rb_fmmfrend.setOnClickListener(this);
         rb_fmmysocial.setOnClickListener(this);
         rb_other.setOnClickListener(this);
@@ -212,7 +249,7 @@ public class Joinus3 extends Activity implements View.OnClickListener {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            // Toast.makeText(Joinus3.this,result.toString(),Toast.LENGTH_LONG).show();
+             //Toast.makeText(Joinus3.this,result.toString(),Toast.LENGTH_LONG).show();
         }
         @Override
         protected void onPreExecute() {

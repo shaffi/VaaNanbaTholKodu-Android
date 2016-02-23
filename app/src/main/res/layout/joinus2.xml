@@ -34,18 +34,19 @@
             android:layout_marginLeft="5dp"
             android:text="@string/txt_about"
             android:layout_marginTop="10dp"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/edxt_work"
             android:layout_width="306dp"
             android:layout_height="60dp"
-
+            android:paddingLeft="5dip"
             android:background="@drawable/edit_text_style"
             android:ems="10"
             android:hint="Working in HP for Sr.UXD."
             android:paddingBottom="10dp"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:layout_marginBottom="4dp"/>
 
         <RelativeLayout
@@ -63,7 +64,8 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:text="@string/txt_email"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
@@ -77,10 +79,11 @@
                 android:layout_height="40dp"
                 android:background="@drawable/edit_text_style"
                 android:ems="10"
+                android:paddingLeft="5dip"
                 android:hint="Enter Your Email Id"
                 android:inputType="textEmailAddress"
                 android:layout_marginBottom="4dp"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textStyle="normal" />
         </RelativeLayout>
 
@@ -91,7 +94,8 @@
             android:layout_marginBottom="5dp"
             android:layout_marginTop="10dp"
             android:text="@string/txt_id"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textStyle="bold"/>
 
         <EditText
             android:id="@+id/edxt_enteridproof"
@@ -99,8 +103,9 @@
             android:layout_height="40dp"
             android:background="@drawable/edit_text_style"
             android:ems="10"
+            android:paddingLeft="5dip"
             android:hint="Ex. Driving Licence No, Voter ID No"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:textStyle="normal"
             android:layout_marginBottom="4dp">
 
@@ -115,7 +120,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/txt_blood"
             android:textSize="15sp"
-            android:textStyle="normal" />
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/edxt_enterbloodgroup"
@@ -124,8 +129,9 @@
             android:layout_marginBottom="4dp"
             android:background="@drawable/edit_text_style"
             android:ems="10"
+            android:paddingLeft="5dip"
             android:hint="Enter Your Blood Group"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:textStyle="normal" >
 
             <requestFocus />
@@ -138,7 +144,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/txt_social"
             android:textSize="15sp"
-            android:textStyle="normal" />
+            android:textStyle="bold" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -154,6 +160,7 @@
                     android:background="@drawable/edit_text_style"
                     android:ems="10"
                     android:hint="@string/text_fb"
+                    android:paddingLeft="5dip"
                     android:textSize="15sp"
                     android:textStyle="normal"
                     android:layout_toRightOf="@+id/imageView1"
@@ -167,6 +174,7 @@
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/edit_text_style"
                     android:ems="10"
+                    android:paddingLeft="5dip"
                     android:hint="@string/text_googlepluse"
                     android:textSize="15sp"
                     android:textStyle="normal"
@@ -181,7 +189,7 @@
                     android:background="@drawable/edit_text_style"
                     android:ems="10"
                     android:hint="@string/text_twitter"
-
+                    android:paddingLeft="5dip"
                     android:textSize="15sp"
                     android:textStyle="normal"
                     android:layout_toRightOf="@+id/imageView3"

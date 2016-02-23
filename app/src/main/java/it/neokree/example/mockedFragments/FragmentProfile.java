@@ -87,7 +87,7 @@ public class FragmentProfile extends Fragment implements View.OnClickListener {
         SharedPreferences pref = this.getActivity().getSharedPreferences("MyPref", Context.MODE_PRIVATE);
         //SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         storedUserid=pref.getString("user_id", null);
-        Toast.makeText(getActivity(),storedUserid, LENGTH_LONG).show();
+        //Toast.makeText(getActivity(),storedUserid, LENGTH_LONG).show();
         new Profileapi().execute();
         return v;
     }
@@ -131,7 +131,7 @@ public class FragmentProfile extends Fragment implements View.OnClickListener {
         }
         @Override
         public void onPostExecute(String result) {
-            Toast.makeText(getActivity(),result, LENGTH_LONG).show();
+
             try {
                 JSONObject jsonobject = new JSONObject(result);
                 JSONObject object = jsonobject.getJSONObject("data");
@@ -139,7 +139,7 @@ public class FragmentProfile extends Fragment implements View.OnClickListener {
                 String storedPhoneNumber = object.getString("mobile");
                 String emergency = object.getString("emergency");
                 String blood = object.getString("blood");
-                String dl = object.getString("dob");
+                String dl = object.getString("proof");
                 String about = object.getString("about");
                 String email = object.getString("email");
                 String social_fb = object.getString("social_fb");
@@ -149,7 +149,7 @@ public class FragmentProfile extends Fragment implements View.OnClickListener {
                 // String know_frndno = object.getString("know_friendno");
                 String address = object.getString("address");
                 String image = object.getString("image");
-                Toast.makeText(getActivity(),storedUsername, LENGTH_LONG).show();
+                //Toast.makeText(getActivity(),storedUsername, LENGTH_LONG).show();
                 txt_name.setText(storedUsername);
                 txt_number.setText(storedPhoneNumber);
                 txt_altnumber.setText("Alt:+91"+emergency);
@@ -163,14 +163,9 @@ public class FragmentProfile extends Fragment implements View.OnClickListener {
                 txt_knwname.setText("I Know VNTK From : "+know_frnd);
                 //txt_knwnumber.setText(know_frndno);
                 txt_address.setText("Address : "+address);
-                // imageUser.setImageDrawable(Drawable.createFromPath(image));
+
                 Picasso.with(getActivity()).load(image).into(imageUser);
-                //Toast.makeText(getActivity(), "hello", LENGTH_LONG).show();
-                //Picasso.with(getApplicationcontext()).load("https://vaananba.herokuapp.com/api/viewprofile/56bc2bea1007150a002b0253").into(imageUser);
-                //Toast.makeText(FragmentProfile.this,"kjhkjhjkhkjhhu", Toast.LENGTH_LONG).show();
-                /*TextView aa = (TextView) findViewById(R.id.textView6);
-                aa.setText(a);
-                Toast.makeText(Profile.this,a, Toast.LENGTH_LONG).show();*/
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }

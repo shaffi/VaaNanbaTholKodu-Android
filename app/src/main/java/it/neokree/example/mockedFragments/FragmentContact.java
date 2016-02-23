@@ -59,12 +59,37 @@ public class FragmentContact extends Fragment implements View.OnClickListener {
 
         SharedPreferences pref = this.getActivity().getSharedPreferences("MyPref", Context.MODE_PRIVATE);
         storedUserid = pref.getString("user_id", null);
-        Toast.makeText(getActivity(), storedUserid, LENGTH_LONG).show();
+        //Toast.makeText(getActivity(), storedUserid, LENGTH_LONG).show();
         comments = (EditText) v.findViewById(R.id.editComment_Feedback);
+        name = (EditText) v.findViewById(R.id.editName);
+        mobile = (EditText) v.findViewById(R.id.editContactNumber);
+        email = (EditText) v.findViewById(R.id.editEmailAddress);
         Button submitB = (Button) v.findViewById(R.id.button1);
         Button call2 = (Button) v.findViewById(R.id.button2);
         submitB.setOnClickListener(this);
         call2.setOnClickListener(this);
+        name.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                name.setHint("");
+            }
+
+        });
+        mobile.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                mobile.setHint("");
+            }
+        });
+        email.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                email.setHint("");
+            }
+        });
+        comments.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                comments.setHint("");
+            }
+        });
+
         return v;
     }
 
@@ -74,7 +99,7 @@ public class FragmentContact extends Fragment implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.button1:
 
-                Toast.makeText(getActivity(), storedUserid, Toast.LENGTH_SHORT).show();
+               // Toast.makeText(getActivity(), storedUserid, Toast.LENGTH_SHORT).show();
                 Intent intent1=new  Intent(getActivity(), Accounts.class);
                 startActivity(intent1);
                 new Contactapi().execute();

@@ -1,170 +1,279 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+
     android:id="@+id/ll_user_info_list"
+
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
+
     android:background="@android:color/white"
+
     android:focusable="true"
+
     android:focusableInTouchMode="true"
+
     android:orientation="vertical"
+
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <include
+
         android:id="@+id/custom_action_bar"
+
         layout="@layout/actionbar_support" />
 
+    <LinearLayout
 
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:background="#FFFFFF"
-    android:weightSum="1">
-
-    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="29dp" >
+
+        android:layout_height="395dp"
+
+        android:orientation="vertical"
+
+        android:background="#FFFFFF"
+
+        android:weightSum="1">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="29dp" >
+
+            <TextView
+
+                android:id="@+id/textTamil"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+
+                android:layout_alignParentTop="true"
+
+                android:background="#000000"
+
+                android:padding="5dp"
+
+                android:text="Tamil "
+
+                android:textColor="#FFFFFF"
+
+                android:textSize="16dp" />
+
+            <TextView
+
+                android:id="@+id/textEnglish"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+
+                android:layout_toLeftOf="@+id/textTamil"
+
+                android:background="#ea5324"
+
+                android:padding="5dp"
+
+                android:text="English"
+
+                android:textColor="#FFFFFF"
+
+                android:textSize="16dp" />
+
+        </RelativeLayout>
 
         <TextView
-            android:id="@+id/textTamil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:background="#000000"
-            android:padding="5dp"
-            android:text="Tamil  "
-            android:textColor="#FFFFFF"
-            android:textSize="16dp" />
 
-        <TextView
-            android:id="@+id/textEnglish"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/textTamil"
-            android:background="#ea5324"
-            android:padding="5dp"
-            android:text="English"
-            android:textColor="#FFFFFF"
-            android:textSize="16dp" />
+            android:id="@+id/label"
 
-    </RelativeLayout>
+            android:layout_width="match_parent"
 
-    <TextView
-        android:id="@+id/label"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:paddingTop="10dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:ems="10"
-        android:paddingBottom="15dp"
-        android:text="@string/commend"
-        android:layout_marginBottom="10dp"
-        android:layout_weight="0.09" />
+            android:layout_height="73dp"
+
+            android:paddingTop="10dp"
+
+            android:paddingLeft="15dp"
+
+            android:paddingRight="15dp"
+
+            android:ems="10"
+            android:layout_marginTop="2dp"
+
+            android:paddingBottom="15dp"
+
+            android:text="@string/commend"
+
+            android:layout_marginBottom="2dp" />
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content" >
+
+            <Button
+
+                android:id="@+id/Fund"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="30dp"
+
+                android:background="#FF33B5E5"
+
+                android:ems="10"
+
+                android:layout_marginBottom="3dp"
+
+                android:layout_marginTop="3dp"
+
+                android:text="Fund Support"
+
+                android:paddingLeft="40dip"
+
+                android:gravity="left|center_vertical"
+
+                android:textColor="@android:color/white" />
+
+            <CheckBox
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="New CheckBox"
+
+                android:id="@+id/checkBox"
+
+                android:layout_centerVertical="true"
+
+                android:background="#FF33B5E5"
+
+                android:buttonTint="@color/white" />
 
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
+
+        </RelativeLayout>
 
         <Button
-            android:id="@+id/Fund"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="#FF33B5E5"
-            android:ems="10"
-            android:layout_marginBottom="3dp"
-            android:layout_marginTop="3dp"
-            android:text="Fund Support"
-            android:paddingLeft="40dip"
+
+            android:id="@+id/bt_material"
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="left"
+
+            android:padding="12dip"
+
+            android:layout_marginBottom="2dp"
+
+            android:background="#C0C0C0"
+
+            android:text="Material Support"
+
             android:gravity="left|center_vertical"
-            android:textColor="@android:color/white" />
 
-        <CheckBox
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:text="New CheckBox"
-            android:id="@+id/checkBox"
-            android:layout_centerVertical="true"
-            android:background="#FF33B5E5"
-            android:buttonTint="@color/white" />
+            android:paddingLeft="5dip" />
 
-        <!--   <ImageButton
-               android:id="@+id/imageButton1"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_alignParentLeft="true"
-               android:layout_alignParentTop="true"
+        <Button
 
-               android:src="@drawable/icontick1" />-->
+            android:id="@+id/bt_book"
 
-    </RelativeLayout>
+            android:layout_width="fill_parent"
 
-    <Button
-        android:id="@+id/bt_material"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:padding="12dip"
-        android:layout_marginBottom="2dp"
-        android:background="#C0C0C0"
-        android:text="Material Support"
-        android:gravity="left|center_vertical"
-        android:paddingLeft="5dip" />
+            android:layout_height="wrap_content"
 
-    <Button
-        android:id="@+id/bt_book"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Book Support"
-        android:layout_gravity="left|center_vertical"
-        android:padding="12dip"
-        android:background="#C0C0C0"
-        android:paddingBottom="1dp"
-        android:layout_marginBottom="2dp"
-        android:gravity="left|center_vertical"
-        android:paddingLeft="5dip"/>
-    <Button
-        android:id="@+id/bt_cloths"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:padding="12dip"
-        android:layout_alignParentLeft="true"
-        android:layout_gravity="left"
-        android:text="Cloths Support"
-        android:layout_marginBottom="2dp"
-        android:gravity="left|center_vertical"
-        android:background="#C0C0C0"/>
-    <Button
-        android:id="@+id/bt_food"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Food Support"
-        android:layout_gravity="left"
-        android:padding="12dip"
-        android:gravity="left|center_vertical"
-        android:background="#C0C0C0"
-        android:layout_marginBottom="2dp"/>
-    <Button
-        android:id="@+id/button_support"
-        android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:background="#FF4500"
-        android:text="I am Support"
-        android:layout_marginTop="10dp"
-        android:textColor="@android:color/white"
-        android:layout_marginBottom="30dp"
-        android:layout_weight="0.25" />
+            android:text="Book Support"
+
+            android:layout_gravity="left|center_vertical"
+
+            android:padding="12dip"
+
+            android:background="#C0C0C0"
+
+            android:paddingBottom="1dp"
+
+            android:layout_marginBottom="2dp"
+
+            android:gravity="left|center_vertical"
+
+            android:paddingLeft="5dip"/>
+
+        <Button
+
+            android:id="@+id/bt_cloths"
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+
+            android:padding="12dip"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_gravity="left"
+
+            android:text="Cloths Support"
+
+            android:layout_marginBottom="2dp"
+
+            android:gravity="left|center_vertical"
+
+            android:background="#C0C0C0"/>
+
+        <Button
+
+            android:id="@+id/bt_food"
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+
+            android:text="Food Support"
+
+            android:layout_gravity="left"
+
+            android:padding="12dip"
+
+            android:gravity="left|center_vertical"
+
+            android:background="#C0C0C0"
+
+            android:layout_marginBottom="2dp"/>
+
+        <Button
+
+            android:id="@+id/button_support"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FF4500"
+            android:text="I am Support"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="90dp"
+            android:layout_weight="0.25" />
 
 
-    <WebView
-        android:id="@+id/webView1"
+
+    </LinearLayout>
+    <ImageView
+
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"/>
-</LinearLayout>
-</LinearLayout>
+        android:layout_height="70dp"
+        android:src="@drawable/banneradvertistment"
+        android:id="@+id/imageview"
+        android:layout_alignBottom="@+id/scroll"
+        android:layout_alignParentBottom = "true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:layout_weight="0.18" />
 
+</LinearLayout>

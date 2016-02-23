@@ -37,29 +37,7 @@ public class Supportus3 extends Activity {
         final ImageView imageblood = (ImageView) findViewById(R.id.imageView5);
         ImageView imagematerial = (ImageView) findViewById(R.id.imageView6);
 
-        /*GridView gridview = (GridView) findViewById(R.id.gridview);
-        gridview.setAdapter(new ImageAdapter1(this));
-        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                // Send intent to SingleViewActivity
-                Intent i = new Intent(getApplicationContext(), BloodSupport.class);
 
-                // Pass image index
-                i.putExtra("id", position);
-                startActivity(i);
-            }
-        });*/
-
-        /*gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                // Send intent to SingleViewActivity
-                Intent i1 = new Intent(getApplicationContext(), FundSupport.class);
-
-                // Pass image index
-                i1.putExtra("id1", position);
-                startActivity(i1);
-            }
-        });*/
         imgback=(ImageView)findViewById(R.id.img_iconhumburger);
         imgback.setOnClickListener(new View.OnClickListener(){
 

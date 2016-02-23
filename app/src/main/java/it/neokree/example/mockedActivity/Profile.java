@@ -165,7 +165,7 @@ public class Profile extends Activity implements View.OnClickListener {
                 String number = object.getString("mobile");
                 String emergency = object.getString("emergency");
                 String blood = object.getString("blood");
-                String dl = object.getString("dob");
+                String dl = object.getString("proof");
                 String about = object.getString("about");
                 String email = object.getString("email");
                 String social_fb = object.getString("social_fb");

@@ -17,14 +17,18 @@
         tools:context="com.example.fundsupport.MainActivity"
         android:background="#FFFFFF" >
 
-        <WebView
-            android:id="@+id/webView1"
-            android:layout_width="300dp"
+        <ImageView
+            android:layout_width="350dp"
             android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true" />
+            android:src="@drawable/banneradvertistment"
+            android:id="@+id/imageview"
 
+            android:layout_alignParentBottom = "true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"/>
         <TextView
             android:id="@+id/textTamil"
             android:layout_width="wrap_content"
@@ -53,12 +57,12 @@
             android:id="@+id/button1"
             android:layout_width="fill_parent"
             android:layout_height="40dp"
-            android:layout_above="@+id/webView1"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="2dp"
             android:background="#ea5324"
             android:text="Cash On Support"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/textgetMoreDetails"
+            android:layout_alignLeft="@+id/textContent"
+            android:layout_alignStart="@+id/textContent" />
 
         <TextView
             android:id="@+id/textContent"

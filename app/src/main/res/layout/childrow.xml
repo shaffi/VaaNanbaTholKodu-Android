@@ -2,10 +2,11 @@
 <RelativeLayout
     android:layout_width="360dp"
     android:id="@+id/linearSecond"
-    android:layout_marginLeft="10dp"
+    android:layout_marginLeft="5dp"
     android:layout_marginBottom="10dp"
-    android:layout_marginRight="10dp"
+    android:layout_marginRight="5dp"
     android:layout_height="200dp"
+
     android:background="@drawable/round_rect"
     android:orientation="vertical"
     android:weightSum="1"
@@ -24,11 +25,12 @@
 
     <it.neokree.example.mockedActivity.RoundImage
         android:id="@+id/image_user"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_alignTop="@+id/user_name"
-        android:layout_toLeftOf="@+id/user_bloodgroup"
-        android:layout_toStartOf="@+id/user_bloodgroup" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/relativeLayout3" />
     <TextView
         android:id="@+id/user_number"
         android:layout_width="113dp"
@@ -66,15 +68,16 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textColor="@color/black"
-        android:layout_alignTop="@+id/txt_dl"
         android:layout_toRightOf="@+id/txt_dl"
-        android:layout_toEndOf="@+id/txt_dl" />
+        android:layout_alignTop="@+id/txt_dl"
+        android:layout_alignRight="@+id/user_name"
+        android:layout_alignEnd="@+id/user_name" />
     <TextView
         android:id="@+id/txt_bloodgroup"
         android:layout_width="37dp"
         android:layout_marginTop="5dp"
         android:layout_height="24dp"
-        android:text="Blood Group:"
+        android:text="BloodGroup: "
         android:textColor="@color/black"
         android:textSize="18sp"
         android:layout_below="@+id/txt_dl"
@@ -91,8 +94,8 @@
         android:textColor="@color/red"
 
         android:layout_alignTop="@+id/txt_bloodgroup"
-        android:layout_alignRight="@+id/user_name"
-        android:layout_alignEnd="@+id/user_name" />
+        android:layout_alignRight="@+id/user_number"
+        android:layout_alignEnd="@+id/user_number" />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -104,15 +107,17 @@
         android:id="@+id/relativeLayout3">
         <ImageView
             android:id="@+id/image_chat"
-            android:layout_width="25dp"
+            android:layout_width="30dp"
             android:src="@drawable/chaticon"
             android:layout_height="35dp"
             android:onClick="onClick"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
         <ImageView
             android:id="@+id/image_uparrow"
-            android:layout_width="wrap_content"
+            android:layout_width="30dp"
             android:src="@drawable/iconuparrow"
             android:layout_height="wrap_content"
             android:onClick="onClick"
@@ -141,6 +146,7 @@
         android:layout_alignBottom="@+id/user_bloodgroup"
         android:layout_alignRight="@+id/view"
         android:layout_alignEnd="@+id/view"
-        android:layout_alignLeft="@+id/relativeLayout3"
-        android:layout_alignStart="@+id/relativeLayout3" />
+        android:layout_toRightOf="@+id/user_bloodgroup"
+        android:layout_toEndOf="@+id/user_bloodgroup"
+        android:layout_alignTop="@+id/user_dl" />
 </RelativeLayout>

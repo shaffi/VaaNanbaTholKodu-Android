@@ -192,13 +192,18 @@
 
     </RelativeLayout>
 
-    <WebView
-        android:id="@+id/webView1"
-        android:layout_width="400dp"
-        android:layout_height="70dp"
-        android:layout_alignParentBottom="true"
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:src="@drawable/banneradvertistment"
+        android:id="@+id/imageview"
+
+        android:layout_alignParentBottom = "true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        />
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"/>
 
     <View
         android:id="@+id/view2"

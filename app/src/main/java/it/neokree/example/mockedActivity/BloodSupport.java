@@ -44,14 +44,50 @@ public class BloodSupport extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bloodsupport);
-        final EditText  name = (EditText) findViewById(R.id.Name);
-        EditText blood = (EditText) findViewById(R.id.BloodGroup);
-        EditText mobile = (EditText) findViewById(R.id.ContactNumber);
-        EditText altnum = (EditText) findViewById(R.id.AlternateNumber);
-        EditText address = (EditText) findViewById(R.id.Address);
-        EditText address1 = (EditText) findViewById(R.id.Address1);
-        EditText address2 = (EditText) findViewById(R.id.Address2);
-        WebView webView = (WebView) findViewById(R.id.webView1);
+        name = (EditText) findViewById(R.id.Name);
+        blood = (EditText) findViewById(R.id.BloodGroup);
+        mobile = (EditText) findViewById(R.id.ContactNumber);
+        altnum = (EditText) findViewById(R.id.AlternateNumber);
+        address = (EditText) findViewById(R.id.Address);
+        address1 = (EditText) findViewById(R.id.Address1);
+        address2 = (EditText) findViewById(R.id.Address2);
+        webView = (WebView) findViewById(R.id.webView1);
+        name.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                name.setHint("");
+            }
+        });
+        blood.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                blood.setHint("");
+            }
+        });
+        mobile.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                mobile.setHint("");
+            }
+        });
+        altnum.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                altnum.setHint("");
+            }
+        });
+        address.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                address.setHint("");
+            }
+        });
+        address1.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                address1.setHint("");
+            }
+        });
+        address2.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                address2.setHint("");
+            }
+        });
+
         submit=(Button)findViewById(R.id.buttonSubmit);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override

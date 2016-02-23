@@ -58,6 +58,41 @@ public class Joinus2 extends Activity implements View.OnClickListener {
         social_google=(EditText) findViewById(R.id.edxt_google);
         social_twitter =(EditText) findViewById(R.id.edxt_twitterLogin);
         btn_nxt = (Button) findViewById(R.id.step_b_button_next);
+        about.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                about.setHint("");
+            }
+        });
+        email.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                email.setHint("");
+            }
+        });
+        proof.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                proof.setHint("");
+            }
+        });
+        blood.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                blood.setHint("");
+            }
+        });
+        social_fb.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                social_fb.setHint("");
+            }
+        });
+        social_google.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                social_google.setHint("");
+            }
+        });
+        social_twitter.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                social_twitter.setHint("");
+            }
+        });
 
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", MODE_PRIVATE);
         pref.getString("key_name1",null);

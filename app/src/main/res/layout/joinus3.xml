@@ -32,8 +32,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:text="How to You Know About Vaa Nanba Thol Kodu"
-                android:textSize="13sp"
-                android:textStyle="normal">
+                android:textSize="14sp"
+                android:textStyle="bold">
             </TextView>
 
     <RadioGroup
@@ -63,8 +63,8 @@
                         android:layout_marginTop="7dp"
                         android:layout_marginBottom="5dp"
                         android:text="Your Friend Name"
-                        android:textSize="13sp"
-                        android:textStyle="normal"/>
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
 
                     <EditText
                         android:id="@+id/edt_friendname"
@@ -73,8 +73,9 @@
                         android:background="@drawable/edit_text_style"
                         android:layout_marginBottom="5dp"
                         android:ems="10"
+                        android:paddingLeft="5dip"
                         android:hint="Enter your Friend Name"
-                        android:textSize="13sp"
+                        android:textSize="15sp"
                         android:textStyle="normal"/>
 
                     <TextView
@@ -85,8 +86,8 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="5dp"
                         android:text="Your Friend Contact No "
-                        android:textSize="13sp"
-                        android:textStyle="normal"/>
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
 
                     <EditText
                         android:id="@+id/edt_frientnumber"
@@ -95,9 +96,10 @@
                         android:background="@drawable/edit_text_style"
                         android:layout_marginBottom="5dp"
                         android:ems="10"
+                        android:paddingLeft="5dip"
                         android:inputType="phone"
                         android:hint="Enter Your Friend Contact"
-                        android:textSize="13sp"
+                        android:textSize="15sp"
                         android:textStyle="normal">
 
                         <requestFocus />
@@ -227,20 +229,21 @@
                 android:layout_marginBottom="5dp"
                 android:ems="10"
                 android:text="Present Address "
-                android:textSize="13sp"
-                android:textStyle="normal" />
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/step_c_etxt_address1"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_alignParentLeft="true"
+                android:paddingLeft="5dip"
                 android:layout_marginBottom="5dp"
                 android:layout_below="@+id/step_c_PresentAddress"
                 android:background="@drawable/edit_text_style"
                 android:ems="10"
                 android:hint="Enter the Address"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:textStyle="normal" />
 
             <EditText
@@ -253,6 +256,7 @@
                 android:ems="10"
                 android:text=" "
                 android:textSize="13dp"
+                android:paddingLeft="5dip"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
                 android:textStyle="normal" />
@@ -268,6 +272,7 @@
                 android:background="@drawable/edit_text_style"
                 android:ems="10"
                 android:text=" "
+                android:paddingLeft="5dip"
                 android:textStyle="normal" />
 
             <EditText
@@ -278,6 +283,7 @@
                 android:layout_alignParentLeft="true"
                 android:background="@drawable/edit_text_style"
                 android:ems="10"
+                android:paddingLeft="5dip"
                 android:text=" "
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"

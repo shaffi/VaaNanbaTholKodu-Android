@@ -30,6 +30,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Base64;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -70,12 +71,29 @@ public class Joinus1 extends Activity implements OnClickListener {
         final ImageView b = (ImageView) findViewById(R.id.imageView_frommobile);
         final ImageView bCam = (ImageView) findViewById(R.id.imageView_takephoto);
         final EditText name = (EditText) findViewById(R.id.step_a_name);
+
         final EditText mobile = (EditText) findViewById(R.id.step_a_mobileNumber);
         final EditText emergency = (EditText) findViewById(R.id.step_a_mergencyContact);
         final DatePicker dob = (DatePicker) findViewById(R.id.datePicker1);
         final int day = dob.getDayOfMonth();
         final int month = dob.getMonth()+1;
         final int year = dob.getYear();
+        name.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                name.setHint("");
+            }
+        });
+        mobile.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                mobile.setHint("");
+            }
+        });
+        emergency.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                emergency.setHint("");
+            }
+        });
+
 
         imgback=(ImageView)findViewById(R.id.img_back);
         imgback.setOnClickListener(

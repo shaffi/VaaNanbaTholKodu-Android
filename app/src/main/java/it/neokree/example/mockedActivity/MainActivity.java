@@ -229,8 +229,10 @@ public class MainActivity extends Activity implements  SearchView.OnQueryTextLis
              child.setText1(obj1.getString("name"));
              child.setText2(obj1.getString("mobile"));
              child.setImage(obj1.getString("image"));
-             child.setText3("hellooo");
-             child.setText4(obj1.getString("blood"));
+            // child.setText3("hellooo");
+             child.setText3(obj1.getString("blood"));
+             //child.setText4(obj1.getString("blood"));
+             child.setText4(obj1.getString("proof"));
              parent.getChildren().add(child);
              ExpandList = (ExpandableListView) findViewById(R.id.exp_list);
              ExpListItems.add(parent);

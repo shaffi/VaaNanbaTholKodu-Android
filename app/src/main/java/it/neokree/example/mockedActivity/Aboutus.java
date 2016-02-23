@@ -58,7 +58,7 @@ public class Aboutus extends Activity {
             }
         });
         //li.setOnClickListener();
-        WebView browser = (WebView) findViewById(R.id.webView);
+        //WebView browser = (WebView) findViewById(R.id.webView);
         //browser.loadUrl("http://www.google.com");
 
         //setContentView(webview);

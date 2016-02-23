@@ -37,21 +37,38 @@ public class IamSupport extends Activity {
     private ImageView imgback;
     private Button btn_support;
     private WebView imageforwebview;
-
+    private EditText name,mobile,address;
+    private Spinner time_from,time_to;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.iamsupport);
         addListenerOnButton();
-        EditText name = (EditText) findViewById(R.id.editText1);
-        EditText mobile = (EditText) findViewById(R.id.editText2);
-        Spinner time_from = (Spinner) findViewById(R.id.spinner1);
-        Spinner time_to = (Spinner) findViewById(R.id.spinner3);
-        EditText address = (EditText) findViewById(R.id.editText3);
-        WebView imageforwebview=(WebView)findViewById(R.id.webView1);
-        imageforwebview.loadDataWithBaseURL("file:///android_asset/", "<img src='bannernew.jpg' />", "text/html", "utf-8", null);
+        name = (EditText) findViewById(R.id.editText1);
+        mobile = (EditText) findViewById(R.id.editText2);
+        time_from = (Spinner) findViewById(R.id.spinner1);
+        time_to = (Spinner) findViewById(R.id.spinner3);
+         address = (EditText) findViewById(R.id.editText3);
+       // WebView imageforwebview=(WebView)findViewById(R.id.webView1);
+//        imageforwebview.loadDataWithBaseURL("file:///android_asset/", "<img src='bannernew.jpg' />", "text/html", "utf-8", null);
         //Button btn_support = (Button) findViewById(R.id.btn_iamsupport);
+        name.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                name.setHint("");
+            }
+        });
+        mobile.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                mobile.setHint("");
+            }
+        });
+        address.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            public void onFocusChange(View v, boolean hasFocus) {
+                address.setHint("");
+            }
+        });
+
         imgback = (ImageView) findViewById(R.id.img_iconhumburger);
         imgback.setOnClickListener(new View.OnClickListener() {
 
